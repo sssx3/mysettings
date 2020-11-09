@@ -1,13 +1,13 @@
 call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'myusuf3/numbers.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mxw/vim-jsx'
 Plug 'itchyny/vim-gitbranch'
 call plug#end()
 
 
-syntax off 
+syntax on
+set wildmenu
 set number
 set ruler
 set hidden
@@ -24,3 +24,6 @@ set wrap
 set linebreak
 set nobackup
 set noswapfile
+
+nnoremap <esc> :noh<return><esc>
+

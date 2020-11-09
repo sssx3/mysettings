@@ -13,4 +13,4 @@ alias gitss="git status --short"
 
 # PS1
 export PROMPT_DIRTRIM=2
-export PS1="\e[0;33m\u\e[m@\h \e[0;33m\w\e[m\n > "
+export PS1="[\t \[$(tput setaf 9)\]\u\[$(tput setaf 15)\]@\[$(tput setaf 12)\]\h \[$(tput sgr0)\]\w ] \$ "
