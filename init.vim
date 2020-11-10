@@ -1,12 +1,17 @@
 call plug#begin('~/.vim/plugged')
+Plug 'itchyny/vim-gitbranch'
 Plug 'jiangmiao/auto-pairs'
 Plug 'myusuf3/numbers.vim'
+Plug 'neoclide/coc-snippets'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'bradfitz/goimports'
+Plug 'OmniSharp/omnisharp-vim'
 Plug 'mxw/vim-jsx'
-Plug 'itchyny/vim-gitbranch'
 call plug#end()
 
 
-syntax on
+syntax off
 set wildmenu
 set number
 set ruler
@@ -27,3 +32,5 @@ set noswapfile
 
 nnoremap <esc> :noh<return><esc>
 
+nmap <S-tab> <Plug>(coc-diagnostic-prev)
+nmap <tab> <Plug>(coc-diagnostic-next)
