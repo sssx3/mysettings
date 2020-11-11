@@ -11,7 +11,7 @@ Plug 'mxw/vim-jsx'
 call plug#end()
 
 
-syntax off
+syntax on
 set wildmenu
 set number
 set ruler
@@ -30,7 +30,14 @@ set linebreak
 set nobackup
 set noswapfile
 
+
 nnoremap <esc> :noh<return><esc>
 
-nmap <S-tab> <Plug>(coc-diagnostic-prev)
-nmap <tab> <Plug>(coc-diagnostic-next)
+imap <C-l> <Plug>(coc-snippets-expand)
+vmap <C-j> <Plug>(coc-snippets-select)
+let g:coc_snippet_next = '<c-j>'
+let g:coc_snippet_prev = '<c-k>'
+imap <C-j> <Plug>(coc-snippets-expand-jump)
+xmap <leader>x  <Plug>(coc-convert-snippet)
+
+set t_Co=256
