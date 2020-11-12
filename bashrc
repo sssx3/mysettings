@@ -2,6 +2,7 @@
 alias p3="python3"
 alias bp3="bpython3"
 alias bat="batcat"
+alias lt="ls -t"
 alias o="xdg-open"
 
 # Git aliases
