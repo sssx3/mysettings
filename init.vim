@@ -41,3 +41,4 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 xmap <leader>x  <Plug>(coc-convert-snippet)
 
 set t_Co=256
+autocmd BufWritePre * %s/\s\+$//e
