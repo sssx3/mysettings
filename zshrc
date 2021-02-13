@@ -9,9 +9,7 @@ alias o="xdg-open"
 alias glog="git log --all --graph --pretty=format:'%Cred%h%Creset -%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias gitss="git status --short"
 
-# Paths
-
+source "$HOME/.cargo/env"
 
 # PS1
 export PROMPT_DIRTRIM=2
-export PS1="[\t \[$(tput setaf 9)\]\u\[$(tput setaf 15)\] \[$(tput sgr0)\]\w ] \$ "
